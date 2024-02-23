@@ -1,0 +1,204 @@
+.first-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* border :2px solid blue; */
+    color: rgb(33, 37, 41);
+    margin-bottom: 50px;
+}
+
+.child-div {
+    width: 60%; /* Adjust this value as needed */
+    height: 400px; /* Adjust this value as needed */
+    background-color: rgrgb(0, 0, 0);
+    margin-bottom: 10px; /* Adjust this value as needed */
+    /* border: 2px solid #000;  */
+
+}
+
+.child-div1 {
+    width: 30%; /* Adjust this value as needed */
+    height: 400px; /* Adjust this value as needed */
+    background-color: rgb(33, 37, 41);
+    margin-bottom: 10px; /* Adjust this value as needed */
+    /* border: 2px solid #000;   */
+}
+
+@media screen and (max-width: 768px) {
+    .first-div {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .child-div {
+        width: 90%; /* Adjust this value as needed */
+    }
+}
+
+.sliderhead{
+   color: rgb(0, 255, 198);
+   font-size: 39px;
+}
+.slidercont{
+    color: white;
+    font-size: 22px;
+}
+
+.title{
+    color: rgb(0, 255, 198);
+   font-size: 39px;
+    
+   margin-left: 3% ;
+}
+.decription{
+    color: white;
+    font-size: 22px;
+    width: 90%;
+    margin-left: 3% ;
+}
+.main{
+    background-color:   rgb(33, 37, 41);
+}
+
+ 
+  .main2{
+    width: 90%;
+    margin: auto ;
+    margin-top: 30px;;
+   
+    /* border: 2px solid red; */
+  }
+  .main2-child{
+     
+    margin: auto ;
+    margin-top: 30px;;
+    height: 250px;
+    /* border: 2px solid yellow; */
+    display: flex;
+  }
+  .childl{
+    width:46%;
+    margin-top: 3px;;
+    height: 250px;
+    border:  2px solid black;
+    border-radius: 10px;
+    background-color: rgb(29, 37, 50);
+  }
+
+  .child2{
+    width:46%;
+    margin-top: 3px;;
+    height: 250px;
+    margin-left: 5%;
+     border:  2px solid black;
+     border-radius: 10px;
+     background-color: rgb(29, 37, 50);
+  }
+  .child5{
+    width:46%;
+    margin-top: 3px;;
+    height: 250px;
+   border:   2px solid black;
+    text-align: center;
+    background-color: rgb(29, 37, 50);
+    border-radius: 10px;
+    margin: auto;
+  }
+  .prod-head{
+    color: rgb(0, 255, 198);
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+
+  }
+  .prod-cont{
+    color: white;
+    text-align: center;
+    font-size: 17px;
+    padding-top: 25px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .squibix{
+    width: 90%;
+    margin: auto ;
+    margin-top: 30px;;
+   color: white;
+   font-size: 25px;
+   margin-bottom: 10px;
+  }
+
+
+
+  .rotate-left-to-right {
+    animation: rotateLeftToRightAnimation 1s ease-in-out forwards;
+  }
+  
+  @keyframes rotateLeftToRightAnimation {
+    0% {
+      transform: rotateY(-90deg);
+    }
+    100% {
+      transform: rotateY(0deg);
+    }
+  }
+  
+
+  .rotate-left-to-right1 {
+    animation: rotateLeftToRightAnimation 2s ease-in-out forwards;
+  }
+  
+  @keyframes rotateLeftToRightAnimation {
+    0% {
+      transform: rotateY(-90deg);
+    }
+    100% {
+      transform: rotateY(0deg);
+    }
+  }
+  
+  .rotate-left-to-right2 {
+    animation: rotateLeftToRightAnimation 4s ease-in-out forwards;
+  }
+  
+  @keyframes rotateLeftToRightAnimation {
+    0% {
+      transform: rotateY(-90deg);
+    }
+    100% {
+      transform: rotateY(0deg);
+    }
+  }
+  
+
+  /* Define animation */
+@keyframes rotate {
+    from {
+      transform: rotateY(0deg);
+    }
+    to {
+      transform: rotateY(360deg);
+    }
+  }
+  
+  /* Apply animation to the rotating div */
+  .rotate {
+    animation: rotate 3s infinite linear;
+  }
+  .learn{
+    text-align: center;
+    width:200px;
+    border: 2px solid rgb(0, 255, 198);
+    color:white;
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 5px;
+  }
+  .nu{
+    margin-top: 50px;
+    font-size: 40px;
+    margin-left: 4%;
+    color: white;
+    font-weight: bold;
+  }

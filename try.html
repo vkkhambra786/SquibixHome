@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Div</title>
+<style>
+    .first-div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .child-div {
+        width: 45%; /* Adjust this value as needed */
+        height: 100px; /* Adjust this value as needed */
+        background-color: #ccc;
+        margin-bottom: 10px; /* Adjust this value as needed */
+        border: 2px solid #000; /* Border added */
+        position: relative; /* For positioning the content div */
+    }
+
+    .content-div {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+</style>
+</head>
+<body>
+    <div class='first-div'>
+        <div class='child-div'></div>
+        <div class='child-div'></div>
+    </div>
+
+    <script>
+        // Function to create and append content div inside each child div
+        function addContentToChildDivs() {
+            var childDivs = document.querySelectorAll('.child-div');
+
+            childDivs.forEach(function(childDiv) {
+                var contentDiv = document.createElement('div');
+                contentDiv.classList.add('content-div');
+                contentDiv.textContent = 'Content here'; // Add your content here
+                childDiv.appendChild(contentDiv);
+            });
+        }
+
+        // Call the function once the DOM is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            addContentToChildDivs();
+        });
+    </script>
+</body>
+</html>
